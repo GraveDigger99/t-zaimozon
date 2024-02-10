@@ -934,154 +934,6 @@ body::after {
           animation: fadeinup 1s ease-in-out;
 }
 
-.loaded [data-transform-to-bottom] {
-  -webkit-transform: translate(0, -100%);
-      -ms-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  opacity: 0;
-}
-
-.loaded [data-transform-to-bottom]._watcher-view {
-  -webkit-animation-name: transform;
-          animation-name: transform;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.loaded [data-transform-to-top] {
-  -webkit-transform: translate(0, 100%);
-      -ms-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  opacity: 0;
-}
-
-.loaded [data-transform-to-top]._watcher-view {
-  -webkit-animation-name: transform;
-          animation-name: transform;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-.loaded [data-transform-to-right] {
-  -webkit-transform: translate(-100%, 0);
-      -ms-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-  opacity: 0;
-}
-
-.loaded [data-transform-to-right]._watcher-view {
-  -webkit-animation-name: transform;
-          animation-name: transform;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-.loaded [data-transform-to-left] {
-  -webkit-transform: translate(100%, 0);
-      -ms-transform: translate(100%, 0);
-          transform: translate(100%, 0);
-  opacity: 0;
-}
-
-.loaded [data-transform-to-left]._watcher-view {
-  -webkit-animation-name: transform;
-          animation-name: transform;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes pulse {
-  from {
-    width: 3.25rem;
-    height: 3.25rem;
-  }
-
-  to {
-    width: 5.25rem;
-    height: 5.25rem;
-  }
-}
-
-@keyframes pulse {
-  from {
-    width: 3.25rem;
-    height: 3.25rem;
-  }
-
-  to {
-    width: 5.25rem;
-    height: 5.25rem;
-  }
-}
-
-@-webkit-keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scale {
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes scale {
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes transform {
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes transform {
-  to {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
 .header {
   padding: 1.25rem 0;
   position: fixed;
@@ -1276,6 +1128,15 @@ body::after {
   background: #fff;
   border-radius: 0.9375rem;
   padding: 10px;
+}
+
+.hero__icon img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .numbers {
